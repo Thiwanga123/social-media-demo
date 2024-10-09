@@ -16,11 +16,11 @@
 
 import ballerina/http;
 import ballerina/log;
-import ballerina/regex;
+import ballerina/lang.regexp;
 import ballerina/sql;
 import ballerina/time;
 import ballerinax/mysql.driver as _;
-import balguides/sentiment.analysis;
+import ballerinax/sentiment.analysis as analysis;
 
 configurable boolean moderate = ?;
 configurable boolean enableSlackNotification = ?;
